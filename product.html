@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,7 +18,7 @@
 <body>
 
     <div class="big-wrapper">
-        <header class="header">
+        <header class="header" data-aos="fade-down">
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo logo" href="#">
@@ -367,6 +367,21 @@
                                     </h5>
                                 </div>
                             </div>
+                            <div class="offers-swiper__arrows">
+                                <div class="offers-swiper__arrows-arrow offers-swiper__arrows-arrow--prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="28" viewBox="0 0 13 28"
+                                        fill="none">
+                                        <path d="M1.18021e-06 13.9658L13 27.4658L13 0.465818L1.18021e-06 13.9658Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="offers-swiper__arrows-arrow offers-swiper__arrows-arrow--next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="28" viewBox="0 0 13 28"
+                                        fill="none">
+                                        <path d="M13 13.9658L0 0.46582V27.4658L13 13.9658Z" fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -376,9 +391,9 @@
                             <h2 class="consultation__title">
                                 Виникли питання і потрібна консультація?
                             </h2>
-                            <a class="consultation__link btn--white" href="#">
+                            <div class="consultation__link btn--white">
                                 замовити консультацію
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -510,6 +525,21 @@
                                     </h5>
                                 </div>
                             </div>
+                            <div class="offers-swiper__arrows">
+                                <div class="offers-swiper__arrows-arrow offers-swiper__arrows-arrow--prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="28" viewBox="0 0 13 28"
+                                        fill="none">
+                                        <path d="M1.18021e-06 13.9658L13 27.4658L13 0.465818L1.18021e-06 13.9658Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="offers-swiper__arrows-arrow offers-swiper__arrows-arrow--next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="28" viewBox="0 0 13 28"
+                                        fill="none">
+                                        <path d="M13 13.9658L0 0.46582V27.4658L13 13.9658Z" fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -524,11 +554,30 @@
                                     Виникли питання і потрібна консультація?
                                 </h2>
                                 <div class="contact-form__inner">
-                                    <input class="contact-form__input" type="text" placeholder="Ім'я">
-                                    <input class="contact-form__input" type="tel" placeholder="Телефон">
-                                    <input class="contact-form__input" type="email" placeholder="E-mail">
-                                    <textarea class="contact-form__textarea" placeholder="Коментар" cols="30"
-                                        rows="10"></textarea>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Ім'я"
+                                        </label>
+                                        <input class="contact-form__box-input" type="text" placeholder="">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Телефон
+                                        </label>
+                                        <input class="contact-form__box-input" type="tel">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            E-mail
+                                        </label>
+                                        <input class="contact-form__box-input" type="email">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Коментар
+                                        </label>
+                                        <textarea class="contact-form__box-textarea" cols="30" rows="10"></textarea>
+                                    </div>
                                 </div>
                                 <button class="contact-form__button btn" type="submit">
                                     відправити
@@ -619,11 +668,30 @@
                                     ВІДПРАВИТИ ЗАЯВКУ
                                 </h2>
                                 <div class="contact-form__inner">
-                                    <input class="contact-form__input" type="text" placeholder="Ім'я">
-                                    <input class="contact-form__input" type="tel" placeholder="Телефон">
-                                    <input class="contact-form__input" type="email" placeholder="E-mail">
-                                    <textarea class="contact-form__textarea" placeholder="Коментар" cols="30"
-                                        rows="10"></textarea>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Ім'я"
+                                        </label>
+                                        <input class="contact-form__box-input" type="text" placeholder="">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Телефон
+                                        </label>
+                                        <input class="contact-form__box-input" type="tel">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            E-mail
+                                        </label>
+                                        <input class="contact-form__box-input" type="email">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Коментар
+                                        </label>
+                                        <textarea class="contact-form__box-textarea" cols="30" rows="10"></textarea>
+                                    </div>
                                 </div>
                                 <button class="contact-form__button btn--white" type="submit">
                                     відправити
@@ -753,6 +821,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,7 +19,7 @@
 <body>
 
     <div class="big-wrapper">
-        <header class="header">
+        <header class="header" data-aos="fade-down">
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo logo" href="#">
@@ -55,10 +56,10 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="header__burger burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="menu-btn">
+                        <div class="line line__1"></div>
+                        <div class="line line__2"></div>
+                        <div class="line line__3"></div>
                     </div>
                 </div>
             </div>
@@ -75,9 +76,9 @@
                                         <h1 class="heading-slide__title">
                                             військова техніка
                                         </h1>
-                                        <a class="heading-slide__link btn" href="#">
+                                        <div class="heading-slide__link btn">
                                             залишити заявку
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="heading-slide__video heading-video">
                                         <a class="heading-video__view" data-fancybox=""
@@ -104,9 +105,9 @@
                                         <h1 class="heading-slide__title">
                                             військова техніка
                                         </h1>
-                                        <a class="heading-slide__link btn" href="#">
+                                        <div class="heading-slide__link btn">
                                             залишити заявку
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="heading-slide__video heading-video">
                                         <a class="heading-video__view" data-fancybox=""
@@ -133,9 +134,9 @@
                                         <h1 class="heading-slide__title">
                                             військова техніка
                                         </h1>
-                                        <a class="heading-slide__link btn" href="#">
+                                        <div class="heading-slide__link btn">
                                             залишити заявку
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="heading-slide__video heading-video">
                                         <a class="heading-video__view" data-fancybox=""
@@ -162,9 +163,9 @@
                                         <h1 class="heading-slide__title">
                                             військова техніка
                                         </h1>
-                                        <a class="heading-slide__link btn" href="#">
+                                        <div class="heading-slide__link btn" >
                                             залишити заявку
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="heading-slide__video heading-video">
                                         <a class="heading-video__view" data-fancybox=""
@@ -924,11 +925,30 @@
                                     Виникли питання і потрібна консультація?
                                 </h2>
                                 <div class="contact-form__inner">
-                                    <input class="contact-form__input" type="text" placeholder="Ім'я">
-                                    <input class="contact-form__input" type="tel" placeholder="Телефон">
-                                    <input class="contact-form__input" type="email" placeholder="E-mail">
-                                    <textarea class="contact-form__textarea" placeholder="Коментар" cols="30"
-                                        rows="10"></textarea>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Ім'я"
+                                        </label>
+                                        <input class="contact-form__box-input" type="text" placeholder="">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Телефон
+                                        </label>
+                                        <input class="contact-form__box-input" type="tel">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            E-mail
+                                        </label>
+                                        <input class="contact-form__box-input" type="email">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Коментар
+                                        </label>
+                                        <textarea class="contact-form__box-textarea" cols="30" rows="10"></textarea>
+                                    </div>
                                 </div>
                                 <button class="contact-form__button btn" type="submit">
                                     відправити
@@ -955,11 +975,30 @@
                                     ВІДПРАВИТИ ЗАЯВКУ
                                 </h2>
                                 <div class="contact-form__inner">
-                                    <input class="contact-form__input" type="text" placeholder="Ім'я">
-                                    <input class="contact-form__input" type="tel" placeholder="Телефон">
-                                    <input class="contact-form__input" type="email" placeholder="E-mail">
-                                    <textarea class="contact-form__textarea" placeholder="Коментар" cols="30"
-                                        rows="10"></textarea>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Ім'я"
+                                        </label>
+                                        <input class="contact-form__box-input" type="text" placeholder="">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Телефон
+                                        </label>
+                                        <input class="contact-form__box-input" type="tel">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            E-mail
+                                        </label>
+                                        <input class="contact-form__box-input" type="email">
+                                    </div>
+                                    <div class="contact-form__box">
+                                        <label class="contact-form__box-label" for="">
+                                            Коментар
+                                        </label>
+                                        <textarea class="contact-form__box-textarea" cols="30" rows="10"></textarea>
+                                    </div>
                                 </div>
                                 <button class="contact-form__button btn--white" type="submit">
                                     відправити
@@ -984,7 +1023,7 @@
                                 <ul class="footer-menu__list">
                                     <li class="footer-menu__list-item">
                                         <a class="footer-menu__list-link" href="#">
-                                            [ про нас ]
+                                            про нас
                                         </a>
                                     </li>
                                     <li class="footer-menu__list-item">
@@ -1090,6 +1129,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
